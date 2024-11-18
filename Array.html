@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Java Script Arrays!</h2>
+    <p>We gonna be creating some arrays in Java Script</p>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="abc"></p>
+    <script>
+        var points = [100, 300, 1, 43, 50, 34];
+        document.getElementById("abc").innerHTML = points;
+        function ascending(){
+            points.sort(function(a,b){return a-b});
+            document.getElementById("abc").innerHTML = points;
+        }
+        function descending(){
+            points.sort(function(a,b){return b-a});
+            document.getElementById("abc").innerHTML = points;
+        }
+        
+    </script>
+</body>
+</html>
